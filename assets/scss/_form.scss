@@ -1,0 +1,26 @@
+/*** form styles **/
+form {
+    .form-control {
+        border: 0.776786px solid #D2D8EA;
+        box-shadow: 0px 0.776786px 1.55357px rgba(16, 24, 40, 0.05) !important;
+        border-radius: 6.21429px;
+        height: 46px;
+        padding: 16px 12px;
+        font-size: 14px;
+        line-height: 19px;
+        outline: none !important;
+
+    }
+
+    .form-check {
+        .form-check-label {
+            color: $dark-gray;
+
+            a {
+                text-decoration: underline;
+                color: $dark-gray;
+            }
+        }
+
+    }
+}
