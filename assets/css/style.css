@@ -1,3 +1,4 @@
+/*** dark mode colors ****/
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Hanken+Grotesk:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap");
 /*
 font-family: 'DM Sans', sans-serif;
@@ -346,7 +347,7 @@ form .form-check .form-check-label a {
 }
 
 /*** header menus style***/
-header .top-menu-block .container {
+header .top-menu-block .container, header .top-menu-block .container-fluid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -425,7 +426,7 @@ header .navbar::after {
   background-size: 100%;
   background-position: right 0 center;
 }
-header .navbar .container {
+header .navbar .container, header .navbar .container-fluid {
   z-index: 2;
 }
 header .navbar .navbar-brand img {
@@ -475,10 +476,9 @@ header .navbar .navbar-nav .form-item .form-control::placeholder {
 }
 .FT-updates-banners .accordion-item {
   border: 0;
-  margin-top: 5px;
 }
 .FT-updates-banners .accordion-item .accordion-button {
-  padding: 7px 0 12px 0;
+  padding: 12px 0;
   outline: none !important;
   box-shadow: none;
   color: #FE3131;
@@ -509,10 +509,65 @@ header .navbar .navbar-nav .form-item .form-control::placeholder {
   transition: transform 0.2s ease-in-out;
 }
 .FT-updates-banners .accordion-item .accordion-button:not(.collapsed) {
-  background: #F5F5F5;
+  background: #E2E9FF;
 }
 .FT-updates-banners .accordion-item .accordion-button:not(.collapsed) .container::after {
   transform: rotate(-180deg);
+}
+.FT-updates-banners .accordion-item .accordion-button.close-btn {
+  background: transparent !important;
+  width: 68px;
+  height: 68px;
+  padding: 0;
+  position: absolute;
+  bottom: -26px;
+  left: calc(50% - 82px);
+  z-index: 9;
+}
+.FT-updates-banners .accordion-item .accordion-button.close-btn img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.FT-updates-banners .accordion-item .accordion-body {
+  position: relative;
+}
+.FT-updates-banners .accordion-item .accordion-body .carousel .carousel-control-next,
+.FT-updates-banners .accordion-item .accordion-body .carousel .carousel-control-prev {
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  color: #3769FF;
+  box-shadow: 0px 2.33333px 15.1667px rgba(55, 105, 255, 0.3);
+  opacity: 1;
+  top: calc(50% - 23.5px);
+  transition: all 0.3s ease-in-out;
+}
+.FT-updates-banners .accordion-item .accordion-body .carousel .carousel-control-next i,
+.FT-updates-banners .accordion-item .accordion-body .carousel .carousel-control-prev i {
+  font-size: 40px;
+}
+.FT-updates-banners .accordion-item .accordion-body .carousel .carousel-control-next:hover,
+.FT-updates-banners .accordion-item .accordion-body .carousel .carousel-control-prev:hover {
+  background: #3769FF;
+}
+.FT-updates-banners .accordion-item .accordion-body .carousel .carousel-control-next:hover i,
+.FT-updates-banners .accordion-item .accordion-body .carousel .carousel-control-prev:hover i {
+  color: #fff;
+}
+.FT-updates-banners .accordion-item .accordion-body .carousel .carousel-control-next {
+  right: 24px;
+}
+.FT-updates-banners .accordion-item .accordion-body .carousel .carousel-control-prev {
+  left: 24px;
+}
+.FT-updates-banners .accordion-item .accordion-body .carousel .carousel-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.FT-hero {
+  position: relative;
 }
 .FT-hero .carousel .carousel-item {
   height: 600px;
@@ -565,6 +620,70 @@ header .navbar .navbar-nav .form-item .form-control::placeholder {
 }
 .FT-hero .carousel .carousel-control-next {
   right: 24px;
+}
+.FT-hero .page-theme {
+  width: 110px;
+  position: absolute;
+  z-index: 9;
+  right: 120px;
+  top: 1px;
+  letter-spacing: -0.03em;
+}
+.FT-hero .page-theme .font {
+  color: #444444;
+  font-weight: 600;
+  background: #fff;
+}
+.FT-hero .page-theme .font .row {
+  margin: 0;
+  align-items: center;
+}
+.FT-hero .page-theme .font .small {
+  font-size: 14px;
+  line-height: 18px;
+}
+.FT-hero .page-theme .font .medium {
+  font-size: 18px;
+  line-height: 23px;
+}
+.FT-hero .page-theme .font .big {
+  font-size: 24px;
+  line-height: 31px;
+}
+.FT-hero .page-theme .theme-mode {
+  background: #FFFFFF;
+  border-top: 1px solid #DDDDDD;
+  border-radius: 0px 0px 8px 8px;
+}
+.FT-hero .page-theme .theme-mode .row {
+  margin: 0;
+}
+.FT-hero .page-theme .theme-mode .light-mode,
+.FT-hero .page-theme .theme-mode .dark-mode {
+  font-family: "Inter";
+  font-size: 11px;
+  line-height: 13px;
+  color: #676E76;
+  padding: 5.5px 8px;
+  cursor: pointer;
+}
+.FT-hero .page-theme .theme-mode .light-mode span,
+.FT-hero .page-theme .theme-mode .dark-mode span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 4px;
+}
+.FT-hero .page-theme .theme-mode .light-mode {
+  background: #DDEAFF;
+  border-radius: 0px 0px 0px 8px;
+}
+.FT-hero .page-theme .theme-mode .light-mode span {
+  background: linear-gradient(90.29deg, #583EE7 26.99%, #0EA0E6 50.09%, #00B6AE 74.69%);
+}
+.FT-hero .page-theme .theme-mode .dark-mode span {
+  background: #3C425D;
 }
 .FT-invest-btns {
   padding-top: 40px;
@@ -942,4 +1061,8 @@ footer .copyrights {
   border-top: 1px solid #DFDFDF;
   background: rgba(55, 105, 255, 0.12);
   padding: 24px 0;
+}
+
+.page-dark-mode {
+  background: #091830;
 }/*# sourceMappingURL=style.css.map */

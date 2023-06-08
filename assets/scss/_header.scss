@@ -1,7 +1,7 @@
 /*** header menus style***/
 header {
     .top-menu-block {
-        .container {
+        .container,.container-fluid {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -103,7 +103,7 @@ header {
         background-size: 100%;
         background-position: right 0 center;
         }
-        .container{
+        .container,.container-fluid{
             z-index: 2;
         }
         .navbar-brand{

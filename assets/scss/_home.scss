@@ -5,10 +5,10 @@
 
         .accordion-item {
             border: 0;
-            margin-top: 5px;
+            //margin-top: 5px;
 
             .accordion-button {
-                padding: 7px 0 12px 0;
+                padding: 12px 0;
                 outline: none !important;
                 box-shadow: none;
                 color: $red;
@@ -43,11 +43,76 @@
                 }
 
                 &:not(.collapsed) {
-                    background: $light-gray;
+                    background: #E2E9FF;
 
                     .container {
                         &::after {
                             transform: rotate(-180deg);
+                        }
+                    }
+                }
+
+                &.close-btn {
+                    background: transparent !important;
+                    width: 68px;
+                    height: 68px;
+                    padding: 0;
+                    position: absolute;
+                    bottom: -26px;
+                    left: calc(50% - 82px);
+                    z-index: 9;
+
+                    img {
+                        margin: 0;
+                        padding: 0;
+                        width: 100%;
+                    }
+                }
+            }
+
+            .accordion-body {
+                position: relative;
+
+                .carousel {
+
+                    .carousel-control-next,
+                    .carousel-control-prev {
+                        width: 47px;
+                        height: 47px;
+                        border-radius: 50%;
+                        background: #FFFFFF;
+                        color: $blue;
+                        box-shadow: 0px 2.33333px 15.1667px rgba(55, 105, 255, 0.3);
+                        opacity: 1;
+                        top: calc(50% - 23.5px);
+                        transition: all 0.3s ease-in-out;
+
+                        i {
+                            font-size: 40px;
+                        }
+
+                        &:hover {
+                            background: $blue;
+
+                            i {
+                                color: #fff;
+                            }
+                        }
+                    }
+
+                    .carousel-control-next {
+                        right: 24px
+                    }
+
+                    .carousel-control-prev {
+                        left: 24px
+                    }
+
+                    .carousel-item {
+
+                        //height: 277px;
+                        img {
+                            object-fit: cover;
                         }
                     }
                 }
@@ -56,6 +121,8 @@
     }
 
     &-hero {
+        position: relative;
+
         .carousel {
             .carousel-item {
                 height: 600px;
@@ -117,6 +184,82 @@
             }
         }
 
+        .page-theme {
+            width: 110px;
+            position: absolute;
+            z-index: 9;
+
+            right: 120px;
+            top: 1px;
+            letter-spacing: -0.03em;
+
+            .font {
+                color: #444444;
+                font-weight: 600;
+                background: #fff;
+
+                .row {
+                    margin: 0;
+                    align-items: center;
+                }
+
+                .small {
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+
+                .medium {
+                    font-size: 18px;
+                    line-height: 23px;
+                }
+
+                .big {
+                    font-size: 24px;
+                    line-height: 31px;
+                }
+            }
+
+            .theme-mode {
+                background: #FFFFFF;
+                border-top: 1px solid #DDDDDD;
+                border-radius: 0px 0px 8px 8px;
+
+                .row {
+                    margin: 0;
+                }
+
+                .light-mode,
+                .dark-mode {
+                    font-family: 'Inter';
+                    font-size: 11px;
+                    line-height: 13px;
+                    color: $dark-gray;
+                    padding: 5.5px 8px;
+cursor: pointer;
+                    span {
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        display: inline-block;
+                        margin-right: 4px;
+                    }
+                }
+
+                .light-mode {
+                    background: #DDEAFF;
+                    border-radius: 0px 0px 0px 8px;
+
+                    span {
+                        background: linear-gradient(90.29deg, #583EE7 26.99%, #0EA0E6 50.09%, #00B6AE 74.69%);
+                    }
+                }
+                .dark-mode{
+                    span{
+                        background: $black;
+                    }
+                }
+            }
+        }
     }
 
     &-invest-btns {
@@ -488,30 +631,36 @@
             border-radius: 8px;
             max-width: 870px;
             margin: 0 auto;
-            h3{
+
+            h3 {
                 font-weight: 700;
                 margin-bottom: 36px;
             }
-            form{
+
+            form {
                 font-family: 'Inter', sans-serif;
             }
-            .btn{
-                width:100%;
-                padding:14px;
+
+            .btn {
+                width: 100%;
+                padding: 14px;
                 font-weight: 500;
             }
         }
     }
-    &-download-options{
+
+    &-download-options {
         background: rgba(222, 228, 247, 0.7);
+
         /*padding-top: 67px;
         padding-bottom: 67px;*/
-        .download-img{
+        .download-img {
             margin-top: -130px;
         }
-        h2{
+
+        h2 {
             font-size: 40px;
-            line-height: 102% ;
+            line-height: 102%;
             max-width: 537px;
             margin-bottom: 36px;
         }
