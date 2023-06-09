@@ -99,7 +99,7 @@ header {
             top:0;
             width:calc(100% - 255px);
             height: 100%;
-            background: #fff url("../images/general/nav-bg.svg") no-repeat;
+            background:  url("../images/general/nav-bg.svg") no-repeat;
         background-size: 100%;
         background-position: right 0 center;
         }
@@ -109,6 +109,9 @@ header {
         .navbar-brand{
             img{
                 width: 200px;
+                &.dark-logo{
+                    display: none;
+                }
             }
         }
         .navbar-nav {

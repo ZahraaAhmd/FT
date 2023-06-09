@@ -58,12 +58,10 @@ $('.digitalize-slider').slick({
     ]
 });
 $(document).ready(function() {
-    /*
-     * make slick slider container padding left as other content
-     */
-    let Screenwidth = $(window).width();
-    let padding = Screenwidth - 1230;
-    if (Screenwidth > 1230) {
-        $(".slider-container").css("padding-left", padding / 2);
-    }
+    $(".dark-mode").click(function(){
+        $("body").addClass("page-dark-mode")
+    });
+    $(".light-mode").click(function(){
+        $("body").removeClass("page-dark-mode")
+    });
 })

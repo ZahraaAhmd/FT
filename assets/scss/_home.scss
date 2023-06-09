@@ -235,13 +235,15 @@
                     line-height: 13px;
                     color: $dark-gray;
                     padding: 5.5px 8px;
-cursor: pointer;
+                    cursor: pointer;
+
                     span {
                         width: 10px;
                         height: 10px;
                         border-radius: 50%;
                         display: inline-block;
                         margin-right: 4px;
+                        vertical-align: middle;
                     }
                 }
 
@@ -253,8 +255,9 @@ cursor: pointer;
                         background: linear-gradient(90.29deg, #583EE7 26.99%, #0EA0E6 50.09%, #00B6AE 74.69%);
                     }
                 }
-                .dark-mode{
-                    span{
+
+                .dark-mode {
+                    span {
                         background: $black;
                     }
                 }
@@ -311,7 +314,7 @@ cursor: pointer;
                 font-weight: 500;
                 font-size: 21.33px;
                 line-height: 150%;
-
+                border-radius: 0;
                 text-align: center;
                 letter-spacing: -0.03em;
                 color: $black;
@@ -568,6 +571,7 @@ cursor: pointer;
                     padding-bottom: 30px;
                     margin-bottom: 30px;
                     font-family: 'Inter', sans-serif;
+                    background: transparent;
 
                     &:last-child {
                         margin-bottom: 0;
@@ -577,13 +581,15 @@ cursor: pointer;
 
                     .accordion-header {
                         .accordion-button {
-
+                            background: transparent;
                             padding: 0;
                             font-weight: 500;
                             font-size: 18px;
                             line-height: 156%;
                             color: #101828;
                             border: 0;
+                            box-shadow: none !important;
+                            outline: none !important;
 
                             &:not(.collapsed) {
                                 color: #101828;

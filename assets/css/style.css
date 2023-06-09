@@ -10,6 +10,7 @@ body {
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 16px;
   color: #3C425D;
+  transition: all 500ms;
   /*max-width:1440px;
   margin: 0 auto;*/
 }
@@ -233,6 +234,7 @@ h3 {
   border: 0;
   border-bottom: 2.5px solid #3769FF;
   margin-bottom: 0;
+  background: transparent;
 }
 
 /*solution-box style */
@@ -422,7 +424,7 @@ header .navbar::after {
   top: 0;
   width: calc(100% - 255px);
   height: 100%;
-  background: #fff url("../images/general/nav-bg.svg") no-repeat;
+  background: url("../images/general/nav-bg.svg") no-repeat;
   background-size: 100%;
   background-position: right 0 center;
 }
@@ -431,6 +433,9 @@ header .navbar .container, header .navbar .container-fluid {
 }
 header .navbar .navbar-brand img {
   width: 200px;
+}
+header .navbar .navbar-brand img.dark-logo {
+  display: none;
 }
 header .navbar .navbar-nav {
   align-items: center;
@@ -674,6 +679,7 @@ header .navbar .navbar-nav .form-item .form-control::placeholder {
   border-radius: 50%;
   display: inline-block;
   margin-right: 4px;
+  vertical-align: middle;
 }
 .FT-hero .page-theme .theme-mode .light-mode {
   background: #DDEAFF;
@@ -728,6 +734,7 @@ header .navbar .navbar-nav .form-item .form-control::placeholder {
   font-weight: 500;
   font-size: 21.33px;
   line-height: 150%;
+  border-radius: 0;
   text-align: center;
   letter-spacing: -0.03em;
   color: #3C425D;
@@ -940,6 +947,7 @@ header .navbar .navbar-nav .form-item .form-control::placeholder {
   padding-bottom: 30px;
   margin-bottom: 30px;
   font-family: "Inter", sans-serif;
+  background: transparent;
 }
 .FT-faq .faq-box .accordion .accordion-item:last-child {
   margin-bottom: 0;
@@ -947,12 +955,15 @@ header .navbar .navbar-nav .form-item .form-control::placeholder {
   border: 0;
 }
 .FT-faq .faq-box .accordion .accordion-item .accordion-header .accordion-button {
+  background: transparent;
   padding: 0;
   font-weight: 500;
   font-size: 18px;
   line-height: 156%;
   color: #101828;
   border: 0;
+  box-shadow: none !important;
+  outline: none !important;
 }
 .FT-faq .faq-box .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
   color: #101828;
@@ -1065,4 +1076,178 @@ footer .copyrights {
 
 .page-dark-mode {
   background: #091830;
+  color: #fff;
+}
+.page-dark-mode .fund-block,
+.page-dark-mode .solution-box,
+.page-dark-mode .FT-financial .tab-content,
+.page-dark-mode .FT-guide .guide-box,
+.page-dark-mode .creation-box,
+.page-dark-mode .update-box,
+.page-dark-mode .FT-fund-types .nav-pills,
+.page-dark-mode .FT-faq .faq-box,
+.page-dark-mode .FT-invest-form .form-box {
+  background: #13294B;
+}
+.page-dark-mode .text-teal {
+  color: #10BCB3 !important;
+}
+.page-dark-mode .bg-gradient {
+  background: #000916;
+  background-image: none !important;
+}
+.page-dark-mode .btn-outline-primary {
+  background: #112138;
+  color: #DDEAFF;
+  border: 1px solid #DDEAFF;
+}
+.page-dark-mode .more-links {
+  color: #fff;
+  font-size: 20.33px;
+  line-height: 101%;
+}
+.page-dark-mode .fund-block .tags {
+  background: #112138;
+}
+.page-dark-mode .fund-block .tags ul li {
+  color: #fff;
+}
+.page-dark-mode .fund-block .tags ul li::after {
+  background: #fff;
+}
+.page-dark-mode .fund-block .info {
+  color: #fff;
+}
+.page-dark-mode .fund-block .info .text-big {
+  color: #DEDEDE;
+}
+.page-dark-mode .nav-tabs .nav-link {
+  color: #DDEAFF;
+  border-bottom-color: #DDEAFF;
+}
+.page-dark-mode .nav-tabs .nav-link.active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+.page-dark-mode .slick-slider .slick-arrow {
+  background: #09172D;
+}
+.page-dark-mode .FT-guide .guide-box h3 {
+  color: #fff;
+}
+.page-dark-mode form .form-check .form-check-label {
+  color: #fff;
+}
+.page-dark-mode form .form-check .form-check-label a {
+  color: #fff;
+}
+.page-dark-mode .creation-box .img-block {
+  background: #091830;
+}
+.page-dark-mode header .top-menu-block {
+  background: #152A4A;
+}
+.page-dark-mode header .top-menu-block .user-type li a {
+  color: #fff;
+}
+.page-dark-mode header .top-menu-block .user-type li.active a {
+  color: #557FFF;
+}
+.page-dark-mode header .top-menu-block .links li a,
+.page-dark-mode header .top-menu-block .links li .dropdown .dropdown-toggle {
+  color: #fff;
+}
+.page-dark-mode header .top-menu-block .links li .dropdown .dropdown-toggle::after {
+  background-image: url("../images/general/arrow-down-white.svg");
+}
+.page-dark-mode header .navbar {
+  background: #091830;
+}
+.page-dark-mode header .navbar .navbar-brand img.dark-logo {
+  display: block;
+}
+.page-dark-mode header .navbar .navbar-brand img.light-logo {
+  display: none;
+}
+.page-dark-mode .FT-title {
+  background-image: linear-gradient(89.89deg, #B9ACFF 26.92%, #5ECBFF 57.79%, #66FFF8 90.66%);
+}
+.page-dark-mode .FT-updates-banners {
+  border: 0;
+}
+.page-dark-mode .FT-updates-banners .accordion-item .accordion-button {
+  background: #212529;
+}
+.page-dark-mode .FT-updates-banners .accordion-item .accordion-button .container::after {
+  background: url("../images/home/arrow-down-gradient.svg") no-repeat center;
+  background-size: 1.25rem;
+}
+.page-dark-mode .FT-hero .page-theme {
+  top: 0;
+}
+.page-dark-mode .FT-hero .page-theme .font {
+  color: #fff;
+  background: #091830;
+}
+.page-dark-mode .FT-hero .page-theme .theme-mode {
+  border-color: #DDDDDD;
+}
+.page-dark-mode .FT-hero .page-theme .theme-mode .dark-mode {
+  background: #152A4A;
+  color: #fff;
+}
+.page-dark-mode .FT-hero .page-theme .theme-mode .dark-mode span {
+  background: #09172D;
+}
+.page-dark-mode .FT-invest-btns {
+  background: #212529;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.page-dark-mode .FT-locations {
+  padding-top: 78px;
+}
+.page-dark-mode .FT-fund-types {
+  padding-bottom: 70px;
+}
+.page-dark-mode .FT-fund-types .nav-pills .nav-link {
+  color: #fff;
+}
+.page-dark-mode .FT-fund-types .nav-pills .nav-link.active {
+  color: #557FFF;
+}
+.page-dark-mode .FT-financial .tab-content .fund-info {
+  background: #091830;
+  color: #fff;
+}
+.page-dark-mode .FT-financial .tab-content .fund-info h3 {
+  color: #fff;
+}
+.page-dark-mode .FT-financial .tab-content .fund-info h3.text-teal {
+  color: #35E8DE !important;
+}
+.page-dark-mode .FT-latest-updates {
+  background: #091830;
+  padding-bottom: 40px;
+}
+.page-dark-mode .FT-faq .faq-box .accordion .accordion-item .accordion-header .accordion-button {
+  color: #fff !important;
+}
+.page-dark-mode .FT-faq .faq-box .accordion .accordion-item .accordion-body {
+  color: #fff;
+}
+.page-dark-mode .FT-invest-form {
+  background: #091830;
+}
+.page-dark-mode .FT-invest-form .form-control {
+  background: #203351;
+  border: 0.776786px solid #203351;
+  box-shadow: 0px 0.776786px 1.55357px rgba(16, 24, 40, 0.05);
+  color: #fff;
+}
+.page-dark-mode .FT-download-options {
+  background: #000916;
+}
+.page-dark-mode footer {
+  background: #011026;
 }/*# sourceMappingURL=style.css.map */

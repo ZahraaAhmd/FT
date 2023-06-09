@@ -1,3 +1,285 @@
-.page-dark-mode{
+.page-dark-mode {
     background: $dark-body-bg;
+    color: #fff;
+
+
+    .fund-block,
+    .solution-box,
+    .FT-financial .tab-content,
+    .FT-guide .guide-box,
+    .creation-box,
+    .update-box,
+    .FT-fund-types .nav-pills,
+    .FT-faq .faq-box,
+    .FT-invest-form .form-box {
+        background: $dark-box-bg;
+    }
+
+    .text-teal {
+        color: #10BCB3 !important;
+    }
+
+    .bg-gradient {
+        background: #000916;
+        background-image: none !important;
+    }
+
+    .btn-outline-primary {
+        background: #112138;
+        color: $sky-blue;
+        border: 1px solid $sky-blue;
+    }
+
+    .more-links {
+        color: #fff;
+        font-size: 20.33px;
+        line-height: 101%;
+    }
+
+    .fund-block {
+
+        .tags {
+            background: #112138;
+
+            ul {
+                li {
+                    color: #fff;
+
+                    &::after {
+                        background: #fff;
+                    }
+                }
+            }
+        }
+
+        .info {
+            color: #fff;
+
+            .text-big {
+                color: #DEDEDE;
+            }
+        }
+    }
+
+
+    .nav-tabs {
+        .nav-link {
+            color: $sky-blue;
+            border-bottom-color: $sky-blue;
+
+            &.active {
+                color: #fff;
+                border-bottom-color: #fff;
+            }
+        }
+    }
+
+    .slick-slider {
+        .slick-arrow {
+            background: #09172D;
+        }
+    }
+
+    .FT-guide {
+        .guide-box {
+            h3 {
+                color: #fff;
+            }
+        }
+    }
+    form {
+        .form-check {
+            .form-check-label{
+                color:#fff;
+                a{
+                    color:#fff
+                }
+            }
+        }
+    }
+
+    .creation-box {
+        .img-block {
+            background: $dark-body-bg;
+        }
+    }
+
+
+    header {
+        .top-menu-block {
+            background: #152A4A;
+
+            .user-type {
+                li {
+                    a {
+                        color: #fff
+                    }
+
+                    &.active {
+                        a {
+                            color: $light-blue
+                        }
+                    }
+                }
+            }
+
+            .links {
+                li {
+
+                    a,
+                    .dropdown .dropdown-toggle {
+                        color: #fff
+                    }
+
+                    .dropdown {
+                        .dropdown-toggle {
+                            &::after {
+                                background-image: url("../images/general/arrow-down-white.svg");
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .navbar {
+            background: $dark-body-bg;
+
+            .navbar-brand {
+                img {
+
+                    &.dark-logo {
+                        display: block;
+                    }
+
+                    &.light-logo {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .FT {
+        &-title {
+            background-image: linear-gradient(89.89deg, #B9ACFF 26.92%, #5ECBFF 57.79%, #66FFF8 90.66%);
+        }
+
+
+        &-updates-banners {
+            border: 0;
+
+            .accordion-item .accordion-button {
+                background: $md-dark;
+
+                .container {
+                    &::after {
+                        background: url("../images/home/arrow-down-gradient.svg") no-repeat center;
+
+                        background-size: 1.25rem;
+                    }
+                }
+            }
+        }
+
+        &-hero {
+            .page-theme {
+                top: 0;
+
+                .font {
+                    color: #fff;
+                    background: $dark-body-bg;
+                }
+
+                .theme-mode {
+                    border-color: #DDDDDD;
+
+                    .dark-mode {
+                        background: #152A4A;
+                        color: #fff;
+
+                        span {
+                            background: #09172D;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        &-invest-btns {
+            background: $md-dark;
+            padding-top: 40px;
+            padding-bottom: 30px;
+        }
+
+        &-locations {
+            padding-top: 78px;
+        }
+
+        &-fund-types {
+            padding-bottom: 70px;
+
+            .nav-pills {
+                .nav-link {
+                    color: #fff;
+
+                    &.active {
+                        color: $light-blue
+                    }
+                }
+            }
+        }
+
+        &-financial {
+            .tab-content {
+                .fund-info {
+                    background: $dark-body-bg;
+                    color: #fff;
+
+                    h3 {
+                        color: #fff;
+
+                        &.text-teal {
+                            color: #35E8DE !important
+                        }
+                    }
+                }
+            }
+        }
+
+        &-latest-updates {
+            background: $dark-body-bg;
+            padding-bottom: 40px;
+
+        }
+
+        &-faq .faq-box .accordion .accordion-item {
+            .accordion-header .accordion-button {
+                color: #fff !important;
+            }
+
+            .accordion-body {
+                color: #fff;
+            }
+        }
+
+        &-invest-form {
+            background: $dark-body-bg;
+
+            .form-control {
+                background: #203351;
+                border: 0.776786px solid #203351;
+                box-shadow: 0px 0.776786px 1.55357px rgba(16, 24, 40, 0.05);
+                color: #fff;
+            }
+        }
+        &-download-options{
+            background: #000916;
+        }
+    }
+
+    footer{
+        background: #011026;
+    }
 }
